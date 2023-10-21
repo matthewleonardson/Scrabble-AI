@@ -14,9 +14,5 @@ private:
     std::vector<std::vector<char>> tiles_; 
     void place_tile(char letter, unsigned x, unsigned y);
     bool word_is_valid(std::string& word, unsigned x, unsigned y, bool downward);
-
-
-
-
-
+    
 };
