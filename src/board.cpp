@@ -97,7 +97,6 @@ bool Board::place_word(std::string word, unsigned x, unsigned y, bool downward) 
 
 }
 
-
 std::string Board::to_string() {
 
     std::string to_return;
