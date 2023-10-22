@@ -35,3 +35,4 @@ void Dictionary::initialize_dictionary_(std::string& path) {
     }
 
 }
+
