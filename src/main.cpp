@@ -3,6 +3,7 @@
 
 #include "board.hpp"
 #include "dictionary.hpp"
+#include "tilebag.hpp"
 
 int main() { 
 
@@ -18,5 +19,7 @@ int main() {
 
     std::cout << dictionary->get_point_value("HELLO") << std::endl;
     std::cout << dictionary->get_point_value("WORLD") << std::endl;
+
+    //TileBag* tilebag = new TileBag();
 
 }
