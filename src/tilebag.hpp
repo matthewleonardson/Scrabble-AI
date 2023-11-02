@@ -16,6 +16,7 @@ public:
     };
 
     TileBag();
+    Tile getNextTile();
 
 private:
     void populateTileVector(std::vector<Tile>& vect, char letter, unsigned point_value, unsigned count);

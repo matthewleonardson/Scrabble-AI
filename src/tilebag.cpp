@@ -54,11 +54,17 @@ TileBag::TileBag() {
     std::shuffle(to_be_shuffled.begin(), to_be_shuffled.end(), rng);
 
     for(Tile& tile : to_be_shuffled) {
-
+        
         tiles_.push(tile);
 
     }
     
+}
+
+TileBag::Tile TileBag::getNextTile() {
+    TileBag::Tile to_return = tiles_.front();
+    tiles_.pop();
+    return to_return;
 }
 
 void TileBag::populateTileVector(std::vector<Tile>& vect, char letter, unsigned point_value, unsigned count) {

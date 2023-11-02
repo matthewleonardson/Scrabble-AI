@@ -1,6 +1,7 @@
 #pragma once
 #include "board.hpp"
 #include "dictionary.hpp"
+#include "tilebag.hpp"
 
 class Game {
 
@@ -13,13 +14,14 @@ private:
 
     struct Player {
         Player();
-        Player(std::vector<char> starting_tiles);
+        Player(std::vector<TileBag::Tile> starting_tiles);
         unsigned score = 0;
-        std::vector<char> tiles;
+        std::vector<TileBag::Tile> tiles;
     };
 
     Dictionary* dict_;
     Board* board_;
+    TileBag* tilebag_;
     std::pair<Player, Player> players_;
 
 };
